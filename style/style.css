@@ -1,0 +1,232 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.d-flex {
+    display: flex;
+}
+.red {
+    color: red;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1 {
+    font-family: cursive;
+    color: rgb(0, 84, 70);
+}
+header input {
+    width: 400px;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+header input::placeholder {
+    color: rgb(0, 84, 70);
+}
+header span {
+    display: flex;
+}
+header span a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 84, 70);
+    font-family: sans-serif;
+}
+header span a:hover {
+    background-color: rgb(0, 84, 70);
+    color: white;
+    border-radius: 5px;
+}
+
+/* SECTION 1 */
+#main {
+    height: 400px;
+    background: url("../images/sac6.jpg") center;
+    background-size: cover;
+    z-index: -10;
+}
+#main div {
+    width: 50%;
+    position: absolute;
+    margin: 160px 0;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 10;
+}
+#main span { 
+    text-transform: capitalize;
+    font-size: 25px;
+}
+#main button {
+    width: 150px;
+    padding: 15px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 84, 70);
+    cursor: pointer;
+}
+#main button:hover {
+    background-color: rgb(1, 57, 48);
+}
+
+/* SECTION 2 */
+#section2 {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#section2 h2 {
+    text-transform: uppercase;
+}
+#section2 p {
+    text-transform: uppercase;
+}
+
+/* SECTION 3 et 5 */
+section h3 a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: cursive;
+    margin: 20px 30px;
+}
+section h3 a:hover {
+    border-bottom: 1px solid rgb(0, 84, 70);
+}
+section .slider1 {
+    display: flex;
+    gap: 5px;
+    height: 200px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+section .slider1 img {
+    animation: scrol 15s infinite;
+}
+/* ANIMATION SECTION 3 et 5 */
+@keyframes scrol {
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+    25%, 
+    45% {
+        transform: translateX(-100%);
+    }
+    50%, 
+    70% {
+        transform: translateX(-203%);
+    }
+    75%, 
+    95% {
+        transform: translateX(-304%);
+    }
+    100% {
+        transform: translateX(-404%);
+    }
+}
+
+/* SECTION 4 */
+#section4, #section6 {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    height: 300px;
+    padding: 50px 0;
+}
+#section4 .div1, #section6 .div1 {
+    width: 30%;
+    margin: 0 20px;
+}
+#section4 .div2, #section6 .div2 {
+    width: 70%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .div2 h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.div2 p {
+    font-weight: bold;
+    font-size: 15pt;
+}
+.button {
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 84, 70);
+    cursor: pointer;  
+ }
+ .button:hover {
+    background-color: rgb(1, 57, 48);
+ }
+
+/* FOOTER */
+footer {
+    background-color: rgb(0, 84, 70);
+    color: white;
+    font-family: sans-serif;
+ }
+ footer h1 {
+    font-family: cursive;
+ }
+ #footer1 {
+    justify-content: space-around;
+ }
+ #devise h2 {
+    width: 200px;
+    border-bottom: 1px solid white;
+ }
+ #devise p {
+    text-transform: uppercase;
+ }
+ #suivre h2 {
+    width: 220px;
+    border-bottom: 1px solid white;
+}
+#suivre span, #contact span {
+    gap: 10px;
+    text-transform: capitalize;
+    align-items: center;
+    margin-top: -14px;
+}
+#suivre span a, #contact span a {
+    color: white;
+    text-decoration: none;
+}
+#suivre img, #contact img {
+    height: 20px;
+    width: 20px;
+}
+#contact h2 {
+    width: 250px;
+    border-bottom: 1px solid white;
+}
+#footer2 {
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+#footer2 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -15px;
+    color: rgb(197, 197, 197);
+}
+
